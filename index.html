@@ -45,6 +45,7 @@
 		script.type = 'text/javascript';
 		script.src = xyUrl;
 		//借鉴了jQuery的script跨域方法
+		
 		script.onload = script.onreadystatechange = function(){
 			if((!this.readyState || this.readyState === "loaded" || this.readyState === "complete")){
 				callback && callback();
